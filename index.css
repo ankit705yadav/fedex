@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(250, 247, 240);
   background-color: rgb(238, 226, 214);
@@ -11,11 +17,18 @@ body {
 
 .navContainer {
   width: 1550px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px 12px;
+}
+
+.navContainer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 43px;
 }
 
 .navLinks {
@@ -25,9 +38,6 @@ body {
   list-style: none;
 }
 
-li {
-}
-
 .navLinks a {
   text-decoration: none;
   font-size: 23px;
@@ -35,24 +45,25 @@ li {
 
 .navContainer button {
   background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   font-size: 18px;
   height: 45px;
   width: 150px;
-  border: 2px solid white;
+  border: 3.5px solid white;
 }
 
 /* Hero */
 
 .hero {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
 }
 
 .heroContainer {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 1600px;
-  /* padding-top: 68px; */
   display: flex;
 }
 
@@ -67,55 +78,180 @@ li {
 .heroContainer p {
   width: 82%;
   font-size: 21px;
-  line-height: 20px;
+  line-height: 30px;
   color: gray;
+  padding-bottom: 40px;
 }
 
 .heroB1 {
-  width: 100px;
-  height: 38px;
+  width: 180px;
+  height: 58px;
+  color: white;
+  font-size: 25px;
   border: none;
   border-radius: 4px;
   margin: 12px 30px 0 0px;
   background-color: rgb(123, 128, 254);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .heroB2 {
-  width: 100px;
-  height: 38px;
-  border: 2px solid rgb(123, 128, 254);
+  width: 180px;
+  height: 58px;
+
+  font-size: 25px;
+  /* border: 2px solid rgb(123, 128, 254); */
   border-radius: 4px;
-  margin: 12px 0px 0 0px;
+  margin: 12px 0px 62px 0px;
   background-color: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .leftSection {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 50%;
+  padding-top: 65px;
 }
 
 .rightsection {
-  border: 3px solid blue;
-  background-color: rgb(23, 25, 66);
-  clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 10% 100%, 0% 80.42%);
+  /* border: 3px solid blue; */
+  /* background-color: rgb(23, 25, 66); */
+  /* clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 10% 100%, 0% 80.42%); */
   display: flex;
-  justify-content: start;
+  padding-top: 65px;
+  justify-content: center;
   align-items: center;
   width: 50%;
 }
 
 .rightsection img {
-  width: 490px;
-  height: 490px;
+  width: 720px;
+  height: 720px;
+  /* background-color: rgb(123, 128, 254); */
+}
+
+/* Slider */
+
+.scroll {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: rgb(23, 25, 66);
+  color: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 34s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+  filter: invert(1);
+}
+
+/* Choose-section */
+
+.choose-section h1 {
+  padding: 190px 0 50px 0px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.choose {
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+.choose img {
+  width: 83px;
   background-color: rgb(123, 128, 254);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  /* filter: invert(); */
 }
 
-.wrapper {
-  /* background-image: url(./assets/rainbowChair.png);
-  padding-left: 50vh; */
-  /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 78% 100%, 50% 84%); */
+.choose div {
+  background-color: rgb(23, 25, 66);
+  color: white;
+  border-radius: 8px;
+  width: 450px;
+  height: 370px;
+  text-align: center;
+  padding: 25px;
 }
 
-/* background-image {
-  width: 500px;
-} */
+.choose h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.choose p {
+  font-size: 18px;
+}
+
+.choose h3 {
+  font-size: 20px;
+  padding-top: 45px;
+}
+
+/* getting started */
+
+.getStarted {
+  display: flex;
+  justify-content: space-between;
+  padding: 280px 200px 0 200px;
+}
+
+.getStarted img {
+  width: 640px;
+  height: 640px;
+  border-radius: 27px;
+}
+
+.getStarted h1 {
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.getStarted p {
+  margin-top: 27px;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 30px;
+  color: gray;
+}
+
+.getStarted button {
+  width: 190px;
+  height: 58px;
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-radius: 4px;
+  margin: 12px 30px 0 0px;
+  background-color: rgb(123, 128, 254);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
