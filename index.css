@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(250, 247, 240);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 800px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  list-style: none;
+}
+
+li {
+}
+
+.navLinks a {
+  text-decoration: none;
+}
+
+.navContainer button {
+  background-color: transparent;
+  height: 39px;
+  width: 100px;
+  border: 2px solid white;
+}
+
+/* Hero */
+
+/* .hero {
+  display: flex;
+  justify-content: center;
+}
+
+.heroContainer {
+  width: 800px;
+  padding-top: 100px;
+}
+
+.heroContainer h1 {
+  width: 50%;
+  font-size: 50px;
+  line-height: 65px;
+} */
