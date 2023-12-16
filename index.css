@@ -1,5 +1,6 @@
 body {
   background-color: rgb(250, 247, 240);
+  background-color: rgb(238, 226, 214);
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -9,12 +10,12 @@ body {
 }
 
 .navContainer {
-  width: 800px;
+  width: 1550px;
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  padding: 35px 12px;
 }
 
 .navLinks {
@@ -29,29 +30,92 @@ li {
 
 .navLinks a {
   text-decoration: none;
+  font-size: 23px;
 }
 
 .navContainer button {
   background-color: transparent;
-  height: 39px;
-  width: 100px;
+  font-size: 18px;
+  height: 45px;
+  width: 150px;
   border: 2px solid white;
 }
 
 /* Hero */
 
-/* .hero {
+.hero {
+  border: 2px solid black;
   display: flex;
   justify-content: center;
 }
 
 .heroContainer {
-  width: 800px;
-  padding-top: 100px;
+  border: 2px solid green;
+  width: 1600px;
+  /* padding-top: 68px; */
+  display: flex;
 }
 
 .heroContainer h1 {
+  width: 100%;
+  font-size: 100px;
+  line-height: 120px;
+  padding-top: 60px;
+  margin-bottom: 25px;
+}
+
+.heroContainer p {
+  width: 82%;
+  font-size: 21px;
+  line-height: 20px;
+  color: gray;
+}
+
+.heroB1 {
+  width: 100px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  margin: 12px 30px 0 0px;
+  background-color: rgb(123, 128, 254);
+}
+
+.heroB2 {
+  width: 100px;
+  height: 38px;
+  border: 2px solid rgb(123, 128, 254);
+  border-radius: 4px;
+  margin: 12px 0px 0 0px;
+  background-color: transparent;
+}
+
+.leftSection {
+  border: 2px solid black;
   width: 50%;
-  font-size: 50px;
-  line-height: 65px;
+}
+
+.rightsection {
+  border: 3px solid blue;
+  background-color: rgb(23, 25, 66);
+  clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 10% 100%, 0% 80.42%);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+}
+
+.rightsection img {
+  width: 490px;
+  height: 490px;
+  background-color: rgb(123, 128, 254);
+}
+
+.wrapper {
+  /* background-image: url(./assets/rainbowChair.png);
+  padding-left: 50vh; */
+  /* clip-path: polygon(50% 0%, 100% 0, 100% 100%, 78% 100%, 50% 84%); */
+}
+
+/* background-image {
+  width: 500px;
 } */
